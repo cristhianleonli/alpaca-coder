@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://foj1a0bwmc3"]
+
+[ext_resource type="Script" uid="uid://c3omks0mjokrf" path="res://audio/audio_manager.gd" id="1_drlug"]
+[ext_resource type="Resource" uid="uid://be1hmbqy0mgdb" path="res://audio/game_audio.tres" id="2_drlug"]
+
+[node name="AudioManager" type="Node2D"]
+script = ExtResource("1_drlug")
+game_audio = ExtResource("2_drlug")
+
+[node name="MusicStreamPlayer" type="AudioStreamPlayer2D" parent="."]
+bus = &"Music"
+
+[node name="EffectsPool" type="Node2D" parent="."]

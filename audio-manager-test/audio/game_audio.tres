@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="GameAudio" load_steps=11 format=3 uid="uid://be1hmbqy0mgdb"]
+
+[ext_resource type="Script" uid="uid://3s8fqmduqwxw" path="res://audio/game_audio.gd" id="1_nflnj"]
+[ext_resource type="Script" uid="uid://cyaq857aeuxn5" path="res://audio/audio_setting.gd" id="2_1sgt3"]
+[ext_resource type="AudioStream" uid="uid://bfmqqshd63wao" path="res://audio/sounds/Sci-Fi-Open_Looping.mp3" id="2_va0tg"]
+[ext_resource type="AudioStream" uid="uid://lec8b8bsdr6g" path="res://audio/sounds/mixkit-cool-interface-click-tone-2568.wav" id="3_a6wuk"]
+[ext_resource type="AudioStream" uid="uid://p3accll8jsvb" path="res://audio/sounds/break_rock.mp3" id="4_va0tg"]
+[ext_resource type="AudioStream" uid="uid://bhccuqxgtklcc" path="res://audio/sounds/Bell 1.wav" id="5_ndm53"]
+
+[sub_resource type="Resource" id="Resource_s34iw"]
+script = ExtResource("2_1sgt3")
+source = ExtResource("2_va0tg")
+volume_db = -17.647
+metadata/_custom_type_script = "uid://cyaq857aeuxn5"
+
+[sub_resource type="Resource" id="Resource_va0tg"]
+script = ExtResource("2_1sgt3")
+source = ExtResource("3_a6wuk")
+pitch_randomness = 0.05
+metadata/_custom_type_script = "uid://cyaq857aeuxn5"
+
+[sub_resource type="Resource" id="Resource_ndm53"]
+script = ExtResource("2_1sgt3")
+source = ExtResource("4_va0tg")
+pitch_randomness = 0.05
+metadata/_custom_type_script = "uid://cyaq857aeuxn5"
+
+[sub_resource type="Resource" id="Resource_xqoq0"]
+script = ExtResource("2_1sgt3")
+source = ExtResource("5_ndm53")
+metadata/_custom_type_script = "uid://cyaq857aeuxn5"
+
+[resource]
+script = ExtResource("1_nflnj")
+sound_1 = SubResource("Resource_va0tg")
+sound_2 = SubResource("Resource_ndm53")
+sound_3 = SubResource("Resource_xqoq0")
+main_music = SubResource("Resource_s34iw")
+metadata/_custom_type_script = "uid://3s8fqmduqwxw"
